@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Success — Design Preview | Frame Wala</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,900;1,500&family=Alex+Brush&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .preview-banner{background:#7a2b1f; color:#fff; text-align:center; padding:12px 20px; font-size:13.5px; line-height:1.5;}
+  .preview-banner a{color:#fff; text-decoration:underline;}
+  .success-wrap{max-width:480px; margin:0 auto; padding:72px 0 90px; text-align:center;}
+  .success-badge{width:60px; height:60px; border-radius:50%; border:2px solid var(--gold); display:flex; align-items:center; justify-content:center; margin:0 auto 22px;}
+  .success-badge svg{width:26px; height:26px;}
+  .success-wrap h1{font-size:30px; margin-bottom:8px;}
+  .success-wrap .order-id{font-size:13.5px; color:var(--text-secondary); margin-bottom:30px;}
+  .success-wrap .order-id b{color:var(--ink); font-weight:600;}
+  .success-card{border:1px solid var(--ink); padding:6px; text-align:left; margin-bottom:26px;}
+  .success-card-inner{border:1px solid var(--gold); padding:22px 22px 8px;}
+  .success-actions{display:flex; gap:10px; flex-wrap:wrap;}
+  .success-actions a{flex:1;}
+</style>
+</head>
+<body>
+
+<div class="preview-banner">
+  DESIGN PREVIEW — not a live page. This screen will display automatically once your backend verifies a real Razorpay payment (not linked from site navigation). See <a href="RAZORPAY-SETUP.md">RAZORPAY-SETUP.md</a>.
+</div>
+
+<header>
+  <div class="nav wrap">
+    <a href="index.html" class="brand" aria-label="Frame Wala home">
+      <img src="logo.png" alt="Frame Wala — Aapke Lamhe, Hamara Frame">
+    </a>
+    <nav class="links">
+      <a href="index.html#about">About</a>
+      <a href="index.html#shop">Shop</a>
+      <a href="index.html#how">How it works</a>
+      <a href="index.html#gallery">Gallery</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <a href="index.html#order" class="cta-btn">Order now</a>
+    <button class="menu-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section>
+  <div class="wrap success-wrap">
+    <div class="success-badge">
+      <svg viewBox="0 0 32 29" aria-hidden="true"><path d="M16 29 2.4 16.6C-1.8 12.6 0.4 5 6.5 3.3c3.3-.9 6.8.5 8.7 3.4l.8 1.2.8-1.2c1.9-2.9 5.4-4.3 8.7-3.4 6.1 1.7 8.3 9.3 4.1 13.3z" fill="var(--gold)"/></svg>
+    </div>
+    <h1>Order Confirmed</h1>
+    <p class="order-id">Order ID: <b>FW-2026-000123</b> · Placed 31 Aug 2026</p>
+
+    <div class="success-card">
+      <div class="success-card-inner">
+        <ul class="summary-list">
+          <li><span>Product</span><span>A4 Metal Photo Frame</span></li>
+          <li><span>Quantity</span><span>1</span></li>
+          <li><span>Customer</span><span>Sample Customer</span></li>
+          <li><span>Amount paid</span><span>₹[Amount]</span></li>
+          <li><span>Payment status</span><span>Paid</span></li>
+          <li><span>Order status</span><span>Processing</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="price-note" style="text-align:left; margin-bottom:26px;">We'll WhatsApp you as your frame moves through production and again when it ships, usually within 3–5 days.</p>
+
+    <div class="success-actions">
+      <a href="#" data-whatsapp-link data-whatsapp-message="Hello Frame Wala, I have a question about my order." class="btn-ghost" target="_blank" rel="noopener">WhatsApp support</a>
+      <a href="index.html" class="btn-primary">Back to home</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <img src="logo.png" alt="Frame Wala">
+    </div>
+    <div class="footer-bottom">
+      <div>© <span id="year"></span> Frame Wala. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
