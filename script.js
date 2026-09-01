@@ -16,7 +16,7 @@ var CONFIG = {
 
   // Official Instagram URL. Used by every [data-instagram-link] element.
   INSTAGRAM_URL: 'https://www.instagram.com/officialframewala',
-
+GOOGLE_SCRIPT_URL: 'https://script.google.com/macros/s/AKfycbydO8FQAIrFnftewR4cJnweLTjYvblDmDoVFBT94dxlqS36NI3CVSNt8pyiY6ELuGt6/exec',
   // Razorpay PUBLIC "Key ID" only (starts with rzp_live_ or rzp_test_).
   // Replace the placeholder below once you have a Razorpay account.
   // NEVER put your Razorpay Key SECRET here or anywhere in this file —
