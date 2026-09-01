@@ -202,9 +202,20 @@ footer{padding:56px 0 30px; border-top:1px solid var(--line);}
   section{padding:60px 0;}
   .form-2col{grid-template-columns:1fr;}
   .modal-panel-inner{padding:26px 18px 22px;}
-}.gallery-grid .g-frame-inner img {
+.gallery-grid .g-frame {
+  width: 180px;
+  height: 180px;
+}
+
+.gallery-grid .g-frame-inner {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  overflow: hidden;
+}
+
+.gallery-grid .g-frame-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
   display: block;
 }
