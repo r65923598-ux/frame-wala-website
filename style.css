@@ -161,7 +161,51 @@ section{padding:96px 0; scroll-margin-top:76px;}
     padding:3px;
   }
 }
+/* Gallery layout fix */
+section#gallery{
+  display:block;
+  width:100%;
+  overflow:hidden;
+  clear:both;
+}
 
+section#gallery .wrap{
+  display:block;
+  width:100%;
+}
+
+.gallery-grid{
+  position:relative;
+  display:grid;
+  width:100%;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:18px;
+  clear:both;
+}
+
+.gallery-grid .g-frame{
+  position:relative;
+  display:block;
+  width:100%;
+  height:auto;
+  box-sizing:border-box;
+}
+
+.gallery-grid .g-frame-inner{
+  position:relative;
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:1 / 1;
+  overflow:hidden;
+}
+
+.gallery-grid .g-frame-inner img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
 /* ---------- CTA band ---------- */
 .cta-band{background:var(--ink); color:#fff; text-align:center; padding:88px 0;}
 .cta-band h2{color:#fff; font-size:32px; margin-bottom:6px;}
