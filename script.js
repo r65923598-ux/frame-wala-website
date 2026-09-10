@@ -92,6 +92,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
   openButtons.forEach(function (btn) { btn.addEventListener('click', openModal); });
   closeButtons.forEach(function (btn) { btn.addEventListener('click', closeModal); });
+  document.querySelectorAll('.gallery-grid img[data-open-order]').forEach(function(img) {
+  img.addEventListener('click', function() {
+    var productSelect = document.getElementById('order-product');
+
+    if (productSelect && img.dataset.product) {
+      productSelect.value = img.dataset.product;
+    }
+  });
+});
   overlay.addEventListener('click', function (e) { if (e.target === overlay) closeModal(); });
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && overlay.classList.contains('open')) closeModal();
